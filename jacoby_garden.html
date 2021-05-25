@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Jacoby Garden</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <!--CDN for jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="image-map-resizer/js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+    <div class="subpage-container">
+        <div class="header" id="jacoby-header">
+            <h1><img src="pics/transparent_leaf_logo.png" alt="leaf logo" class="logo sub-logo"/><span class="stylized">BG</span>
+                <span class="subpage-title">The Jacoby Garden</span></h1>
+
+            <div>
+                <div class="menu-container">
+                    <ul class="menu">
+                        <li class="menu-item"><a href="acknowledgments.html">Acknowledgments</a></li>
+                        <li class="menu-item"><a href="form.html">Questionnaire</a></li>
+                        <li class="menu-item"><a href="woodies.html">The Woodies</a></li>
+                        <li class="menu-item"><a href="jacoby_garden.html">Jacoby Garden</a></li>
+                        <li class="menu-item"><a href="index.html">Home</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="intro" id="jacoby-intro">
+            
+            <h3>Play the Plant Finding Game!</h3>            
+            <p class="instructions"><b>Instructions:</b> Move your cursor around the picture to find the six mystery plants. 
+                When you find one of the clickable regions on the picture, click to learn more about that plant. 
+                After you learn about each plant, one mystery square will be filled in. See if you can find all six!</p>
+        </div>
+
+        <section>
+            <img src="pics/jacoby_garden_edited_med-res.jpg" alt="Jacoby Garden full view" id="jacoby"
+                usemap="#jacoby-map">
+            <map name="jacoby-map">
+                <area shape="circle" coords="350,1015,150" alt="Coreopsis" href="#" id="coreopsisArea" title="coreopsis">
+                <area shape="circle" coords="750,425,95" alt="Phlox" href="#" id="phloxArea" title="phlox">
+                <area shape="circle" coords="750,170,95" alt="Viburnum" href="#" id="viburnumArea" title="viburnum">
+                <area shape="circle" coords="530,280,115" alt="Baptisia" href="#" id="baptisiaArea" title="baptisia">
+                <area shape="circle" coords="1100,275,90" alt="Juniper" href="#" id="juniperArea" title="juniper">
+                <area shape="circle" coords="1250,700,280" alt="Yarrow" href="#" id="yarrowArea" title="yarrow">               
+            </map>
+            <p>Photo by Jessica Ealick</p>
+            <p class="offset" id="jerry-jacoby-intro">
+                ~ The Jacoby Garden was named after the late painter Jerry Jacoby of Omaha, Nebraska. 
+                His vibrant paintings of geometric landscapes were an inspiration for the original layout of 
+                this garden.
+                Like Jerry's paintings, the Jacoby Garden finds its own beauty outside the bounds of traditional 
+                landscapes. <button id="required-button"><a href="downloads/jacoby_plants.docx" id="required-download" download>
+                Click here</a></button> to download a list of current 
+                and former plants in the Jacoby Garden. ~            
+            </p>
+            <br>
+
+        </section>
+        <div class="sidebar" id="side1">
+
+            <div class="card" id="card1">
+                <p class="vertical-align" id="q1">?</p>
+                <div><img src="pics/coreopsis.jpg" class="hidden-pic" id="hidden-pic1"></div>            
+            </div>
+            <div class="card" id="card2">
+                <p class="vertical-align" id="q2">?</p>
+                <div><img src="pics/phlox.jpg" class="hidden-pic" id="hidden-pic2"></div>   
+            </div>
+            <div class="card" id="card3">
+                <p class="vertical-align" id="q3">?</p>
+                <div><img src="pics/vdentatum.JPG" class="hidden-pic" id="hidden-pic3"></div>
+            </div>
+        </div>
+
+        <div class="sidebar" id="side2">
+
+            <div class="card" id="card4">
+                <p class="vertical-align" id="q4">?</p>
+                <div><img src="pics/yarrow.JPG" class="hidden-pic" id="hidden-pic4"></div>
+            </div>
+            <div class="card" id="card5">
+                <p class="vertical-align" id="q5">?</p>
+                <div><img src="pics/baptisia.jpg" class="hidden-pic" id="hidden-pic5"></div>
+            </div>
+            <div class="card" id="card6">
+                <p class="vertical-align" id="q6">?</p>
+                <div><img src="pics/jhorizontalis.jpg" class="hidden-pic" id="hidden-pic6"></div>
+            </div>    
+        </div>
+
+        <div class="footer" id="jacoby-footer"><footer>Footer</footer></div>
+
+    </div>
+
+
+        <!-- The First Modal -->
+    <div id="modal1" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="picture-container">
+                <img src="pics/coreopsis.jpg" alt="coreopsis" id="coreopsisPic"/>
+                <p>Coreopsis 'Zagreb' with tiny flower buds forming within protruding sepals.</p>
+                <small>Photo by Jessica Ealick</small>
+            </div>
+            <div class="notes-container">
+                <span class="close" id="close1">&times;</span>
+                <h3><em>Coreopsis verticillata</em> 'Zagreb' <br>
+                    Common Name: Tickseed<br><br>
+                    Growing Notes:</h3>
+                <p>These coreopsis have performed well for several years on a dry slope in spite of having to compete
+                    for resources with a lingering stand of Canada thistle. 
+                    Late summer performance is affected by powdery mildew. 
+                    This year in 2021 we are trying a regime of weekly watering to see if improved culture will 
+                    prolong healthy foliage farther into the growing season.</p>
+            </div>
+        </div>
+    </div>
+    
+        <!-- The Second Modal -->
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <div class="picture-container">
+                <img src="pics/phlox.jpg" alt="creeping phlox flower" id="phlox-pic"/>
+                <p>Phlox subulata flower closeup.</p>
+                <small>Photo by Jessica Ealick</small>
+            </div>
+            <div class="notes-container">
+                <span class="close" id="close2">&times;</span>
+                <h3><em>Phlox subulata</em> unidentified blue cultivar<br>
+                    Common Name: Creeping phlox<br><br>
+                    Growing Notes:</h3>
+                <p>Twenty-one phlox plants were originally planted as a groundcover in the Jacoby Garden. 
+                    They have performed extremely well, producing a lovely show of flowers every spring and shading out much of the thistle. 
+                    Other weeds such as stoloniferous grasses and spring annuals like deadnettle and hairy bittercress can grow through. 
+                    Hardy, drought, and wind-tolerant, the phlox plants growing amidst blue irises and in the lee of a garden bench seem to fare the 
+                    best with a small amount of extra protection and moisture. 
+                </p>
+            </div>
+        </div>
+    </div>    
+
+        <!-- The Third Modal -->
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <div class="picture-container">
+                <img src="pics/vdentatum.JPG" alt="viburnum dentatum" id="viburnumPic"/>
+                <p>Ripe blue berries of the arrowwood viburnum, a favorite of migratory birds.</p>
+                <small>Photo by Jessica Ealick</small>
+            </div>
+            <div class="notes-container">
+                <span class="close" id="close3">&times;</span>
+                <h3><em>Viburnum dentatum</em><br>
+                    Common Name: Arrowwood<br><br>
+                    Growing Notes:</h3>
+                <p>A tempting target for browsing deer and groundhogs when young, this shrub needed protection with chicken wire to get it 
+                    established. After a couple seasons of growth it was good on its own. We now have it paired with the 'Blueberry Muffin' cultivated 
+                    variety to improve fruit set, though it is said to fruit on its own. Give this shrub plenty of room or tend to suckering growth. 
+                    We love this shrub... Even though its flowers in May are surprisingly stinky! 
+                </p>
+            </div>
+        </div>
+    </div>
+
+        <!-- The Fourth Modal -->
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <div class="picture-container">
+                <img src="pics/yarrow.JPG" alt="peach colored yarrow" id="yarrowPic"/>
+                <p>Yarrow in flower next to a boulder.</p>
+                <small>Photo by Jessica Ealick</small>
+            </div>
+            <div class="notes-container">
+                <span class="close" id="close4">&times;</span>
+                <h3><em>Achillea millefolium</em> possibly 'Peachy Seduction'<br>
+                    Common Name: Yarrow<br><br>
+                    Growing Notes:</h3>
+                <p>Yarrow varieties come in a wide array of colors. The wild form produces white flowers that are attractive to pollinators. 
+                    Although our yarrow has proven to be long-lived in the Jacoby Garden, it grows so quickly and establishes so easily that it is 
+                    still a good choice. Some people may consider yarrow to be a weed in turfgrass and other locations, but thanks to a growing 
+                    appreciation for wild and native plants, yarrow is growing in popularity. 
+                </p>
+            </div>
+        </div>
+    </div>
+
+        <!-- The Fifth Modal -->
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <div class="picture-container">
+                <img src="pics/baptisia.jpg" alt="false indigo flower buds" id="baptisiaPic"/>
+                <p>False indigo spikes of flower buds ready to open.</p>
+                <small>Photo by Jessica Ealick</small>
+            </div>
+            <div class="notes-container">
+                <span class="close" id="close5">&times;</span>
+                <h3><em>Baptisia australis</em><br>
+                    Common Name: False indigo<br><br>
+                    Growing Notes:</h3>
+                <p>False indigo is a solid performer among the Eastern native plants that are available in the horticultural trade. 
+                    Its only disadvantage is that once established it does self seed freely, and if you don't catch the seedlings in the first year 
+                    they can be a bit tricky to dig out. But it is worth it. This plant is so beautiful and boasts scores of flowers for a long 
+                    flowering period in spring and early summer. Unfortunately, Japanese stilt grass has started growing under one of my false indigo 
+                    plants, and I'm still looking for an easy way to fish it out from amongst the plant's stems.
+                </p>
+            </div>
+        </div>
+    </div>    
+
+        <!-- The Sixth Modal -->
+    <div id="modal6" class="modal">
+        <div class="modal-content">
+            <div class="picture-container">
+                <img src="pics/jhorizontalis.jpg" alt="closeup of creeping juniper" id="juniperPic"/>
+                <p>Lovely sprays of creeping juniper branches.</p>
+                <small>Photo by KENPEI, CC BY-SA 3.0 <a href=http://creativecommons.org/licenses/by-sa/3.0>license</a>, via Wikimedia Commons</small>
+            </div>
+            <div class="notes-container">
+                <span class="close" id="close6">&times;</span>
+                <h3><em>Juniperus horizontalis</em><br>
+                    Common Name: Creeping juniper<br><br>
+                    Growing Notes:</h3>
+                <p>As its botanical name indicates, this plant is a prostrate ground cover that is one of the few evergreen groundcovers native 
+                    to this region. It can be recognized by the distinctive bronze color it turns in winter. This plant was well established 
+                    when we bought our house, and we have done nothing but prune it back from time to time. This year I have noticed a small 
+                    amount of die-back but I believe it will respond well to pruning. In addition to providing a strong groundcover, this plant 
+                    provides cover for many types of wildlife including beneficial garden snakes.
+                </p>
+            </div>
+        </div>
+    </div>    
+
+
+</body>
+
+<script> 
+    imageMapResize();
+</script>
+<script type="text/javascript" src="index.js"></script>
+
+</html>

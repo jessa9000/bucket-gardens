@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionnaire</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+
+    <div class="header" id="form-header">
+        <h1><img src="pics/transparent_leaf_logo.png" alt="leaf logo" class="logo sub-logo"/><span class="stylized">BG</span>
+            </h1>
+      
+
+        <div>
+            <div class="menu-container">
+                <ul class="menu">
+                    <li class="menu-item"><a href="acknowledgments.html">Acknowledgments</a></li>
+                    <li class="menu-item"><a href="form.html">Questionnaire</a></li>
+                    <li class="menu-item"><a href="woodies.html">The Woodies</a></li>
+                    <li class="menu-item"><a href="jacoby_garden.html">Jacoby Garden</a></li>
+                    <li class="menu-item"><a href="index.html">Home</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <h1>Native Plant Gardening Survey</h1>
+    <p>You are invited to fill out the following questionnaire. <strong>All fields are optional.</strong> 
+        If you would like to receive updates, please enter your contact information. 
+        (Visitors and guests, please be aware that this form is currently for test purposes only. This notice will be updated when it is operational.)              
+    </p>
+    <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="POST">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label>Name:
+                <input type="text" name="name" size="40" maxlength="100">
+            </label>
+            <br>
+            <label>Email:
+                <input type="email" name="email" size="40" maxlength="100">
+            </label>
+            <br><br>
+            <label><p>Interest/Knowledge/Experience - please check any that apply to you.</p></label>
+            <input type="checkbox" name="no-experience" > <label for="no-experience">No experience in native plant gardening</label><br>
+            <input type="checkbox" name="some-experience" > <label for="some-experience">Some experience with native plant gardening</label><br>
+            <input type="checkbox" name="experienced" > <label for="experienced">Experienced native plant gardener</label><br>
+            <input type="checkbox" name="expert" > <label for="expert">Expert native plant gardener </label><br>
+            <input type="checkbox" name="unfamiliar" > <label for="unfamiliar">Unfamiliar with the difference between native plants and other ornamental plants</label><br>
+            <input type="checkbox" name="familiar" > <label for="familiar">Familiar with the difference</label><br>
+            <input type="checkbox" name="not-interested" > <label for="not-interested">Familiar with the difference but not interested in native plants</label><br>
+            <input type="checkbox" name="excited" > <label for="excited">Excited to be a part of the native plant movement</label><br>
+            <input type="checkbox" name="curious" > <label for="curious">Curious about the native plant movement</label><br>
+            <input type="checkbox" name="supportive" > <label for="supportive">Supportive of the native plant movement</label><br>
+            <input type="checkbox" name="annoyed" > <label for="annoyed">Annoyed by the native plant movement &#128516;</label><br>
+
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>USDA Plant Hardiness Zone</legend>
+            <p>Enter your plant hardiness zone to receive a plant recommendation for your garden!
+                Find your zone by ZIP code at the <a href="https://planthardiness.ars.usda.gov/PHZMWeb/">USDA website</a>. 
+                State maps are also available for a detailed view, as ZIP codes may span multiple zones.</p>
+            <label><input type="radio" name="zone" id="zone" value="zone1">Zone 1 (annual minimum of -60 to -50 Fahrenheit)</label><br>
+            <label><input type="radio" name="zone" id="zone" value="zone2">Zone 2 (annual minimum of -50 to -40 Fahrenheit)</label><br>
+            <label><input type="radio" name="zone" id="zone" value="zone2">Zone 2 (annual minimum of -50 to -40 Fahrenheit)</label><br>
+            <label><input type="radio" name="zone" id="zone" value="zone3">Zone 3 (annual minimum of -40 to -30 Fahrenheit)</label><br>
+            <label><input type="radio" name="zone" id="zone" value="zone4">Zone 4 (annual minimum of -30 to -20 Fahrenheit)</label><br>
+            <label><input type="radio" name="zone" id="zone" value="zone5">Zone 5 (annual minimum of -20 to -10 Fahrenheit)</label><br>
+            <label><input type="radio" name="zone" id="zone" value="zone6">Zone 6 (annual minimum of -10 to 0 Fahrenheit)</label><br>
+            <label><input type="radio" name="zone" id="zone" value="zone7">Zone 7 (annual minimum of 0 to 10 Fahrenheit)</label><br>
+            <label><input type="radio" name="zone" id="zone" value="zone8">Zone 8 (annual minimum of 10 to 20 Fahrenheit)</label><br>
+            <label><input type="radio" name="zone" id="zone" value="zone9">Zone 9 (annual minimum of 20 to 30 Fahrenheit)</label><br>
+            <label><input type="radio" name="zone" id="zone" value="zone10">Zone 10 (annual minimum of 30 to 40 Fahrenheit)</label><br>
+            <label><input type="radio" name="zone" id="zone" value="zone11">Zone 11 (annual minimum of 40 to 50 Fahrenheit)</label><br>
+            <label><input type="radio" name="zone" id="zone" value="zone12">Zone 12 (annual minimum of 50 to 60 Fahrenheit)</label><br>
+            <label><input type="radio" name="zone" id="zone" value="zone13">Zone 13 (annual minimum of 60 to 70 Fahrenheit)</label><br>
+            
+        </fieldset>
+        <br>
+        <fieldset>
+            
+            <p>Would you like to learn more about Bucket Gardens and native plant gardening?</p>
+            <label><input type="radio" name="interest" value="yes">Yes</label>
+            <label><input type="radio" name="interest" value="no">No</label>
+            <label><input type="radio" name="interest" value="maybe">Maybe</label>
+            <p>Please feel welcome to leave comments, suggestions, or topics you would like to learn more about.</p>            
+            <label for="comments">Comments</label>
+            <br>
+            <textarea rows="8" cols="150" id="comments"></textarea>
+
+        <br>
+        </fieldset>
+        <div class="center"><input type="submit" value="Submit" id="form-submit"></div> 
+    </form>
+<script src="index.js"></script>
+</body>
+</html>
